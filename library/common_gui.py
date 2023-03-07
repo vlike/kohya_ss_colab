@@ -33,19 +33,19 @@ def get_file_path(
 
     initial_dir, initial_file = get_dir_and_file(file_path)
 
-    root = Tk()
-    root.wm_attributes('-topmost', 1)
-    root.withdraw()
-    file_path = filedialog.askopenfilename(
-        filetypes=(
-            (f'{extension_name}', f'{defaultextension}'),
-            ('All files', '*'),
-        ),
-        defaultextension=defaultextension,
-        initialfile=initial_file,
-        initialdir=initial_dir,
-    )
-    root.destroy()
+#     root = Tk()
+#     root.wm_attributes('-topmost', 1)
+#     root.withdraw()
+#     file_path = filedialog.askopenfilename(
+#         filetypes=(
+#             (f'{extension_name}', f'{defaultextension}'),
+#             ('All files', '*'),
+#         ),
+#         defaultextension=defaultextension,
+#         initialfile=initial_file,
+#         initialdir=initial_dir,
+#     )
+#     root.destroy()
 
     if file_path == '':
         file_path = current_file_path
